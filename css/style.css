@@ -17,8 +17,8 @@ p {
     background-color: thistle;
 }
 
-p.main {
-    text-size-adjust: 20;
+main {
+    font-size: 5em;
     text-align: center;
     border-color: saddlebrown;
 }
