@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(247, 206, 220);
+    text-align: center;
+}
+
+h1 {
+    border: 5px dotted saddlebrown;
+    padding: 5px;
+    text-align: center;   
+}
+
+p {
+    width: auto;
+    border: 5px solid rebeccapurple;
+    padding: 10px;
+    text-align: center;
+    background-color: thistle;
+}
+
+p.main {
+    text-size-adjust: 20;
+    text-align: center;
+    border-color: saddlebrown;
+}
+
