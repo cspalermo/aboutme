@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(247, 206, 220);
+    background-color: rgb(248, 212, 224);
     text-align: center;
 }
 
@@ -23,3 +23,12 @@ main {
     border-color: saddlebrown;
 }
 
+ol {
+    list-style: decimal;    
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ul li::before {}

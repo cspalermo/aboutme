@@ -13,6 +13,7 @@ if((askRead.toLowerCase() === 'yes') || (askRead === 'y')) {
   alert(initialAsk + ' Please look it over.');
 } else {
   alert(initialAsk + ' lower and UPPER case letters matter.');
+ // console.log(initialAsk + ' well, I worked hard on this!');
 }
 
 var askFrom = prompt ('Are you from the area?');
@@ -23,6 +24,7 @@ if((askFrom.toLowerCase() ==='yes') || (askFrom === 'y')) {
   alert('Me neither!');
 } else {
   alert('I am from the East Coast');
+  // console.log('home sweet home' + askFrom);
 }
 
 var askFamily = prompt ('Do you have any siblings?');
@@ -33,6 +35,7 @@ if((askFamily.toLowerCase() ==='yes') || (askFamily === 'y')) {
   alert('Got it!');
 } else {
   alert('Families come in all shapes and sizes!');
+ //  console.log('Families come in all shapes and sizes' + askFamily);
 }
 
 var askPets = prompt ('Do you have any pets?');
@@ -43,6 +46,7 @@ if((askPets.toLowerCase() ==='yes') || (askPets === 'y')) {
   alert('My cat passed away in 2017.');
 } else {
   alert('Gotta love them.');
+//  console.log('Gotta love them' + askPets);
 }
 
 var askCoffee = prompt ('Do you want to go grab some coffee after this');
@@ -53,6 +57,7 @@ if((askCoffee.toLowerCase() === 'yes') || (askCoffee === 'y')) {
   alert('Tea is good, too, ' + initialAsk);
 } else {
   alert('Good to meet you, ' + initialAsk);
+ // console.log('Good to meet you' + initialAsk);
 }
 
 
