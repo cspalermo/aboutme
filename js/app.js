@@ -78,7 +78,7 @@ while (guesses > 0 && response !== answerSix) {
         correctResponses++;
         //console.log('That is correct!');
         break; //do I need a break here?
-        // how do I track the right answers? out of 7
+        // how do I track the right answers? out of 7.  var correctResponses at top of page
 
     }
     else if (response < answerSix) {
@@ -96,33 +96,63 @@ while (guesses > 0 && response !== answerSix) {
 }
 
 // Question 7 Multiple correct answers stored in an array, 6 attempts
+// huge thanks to Ryan Geddes for the help and explanations
 
-var martialartsArr = [
+var martialartsArr = [  //values in an array tracked with index.  indexOf to refer to specific one
     'Kali',
     'Panatukan',
-    'Brazilian jiu jitsu',
+    'Brazilian Jiu Jitsu',
     'Muay Thai',
     'Combat Submission Wrestling',
     'Boxing',
     'Jeet Kun Do'];
 
 var styleGuess = prompt('Of the martial arts styles I train, which are my favorite?  You have 6 guesses.');
+    // user input prompt
 
 for (var i = 0; i < 6; i++) {
-    if (martialartsArr.indexOf(styleGuess) > 4 && i < 5){
-        styleGuess = prompt('Those are great, not my favorite');
+    if (martialartsArr.indexOf(styleGuess) > 3 && i < 5){
+        styleGuess = prompt('That is great, but not my favorite, try again.');
 }
 
 else if (martialartsArr.indexOf(styleGuess) === -1 && i < 5){
-    styleGuess = prompt('I don\t train that style.');
+    styleGuess = prompt('I do not train that style, try again.');
 }
-    alert('')
+    // answer outside of the array, not reached max guesses -1
+
+    else if (martialartsArr.indexOf(styleGuess) <= 3){
+        alert('You got it!  Also '
+        + martialartsArr[0] + ', '
+        + martialartsArr[1] + ', and '
+        + martialartsArr[2] + '. Great stuff.');
+        correctResponses++;
+        break;       
 }
+    else if (martialartsArr.indexOf(styleGuess) > 3 && i >=5){
+        alert('Out of guesses. The correct answers are: '
+        + martialartsArr[0] + ', '
+        + martialartsArr[1] + ', or '
+        + martialartsArr[2]);
+    }
+    else {
+        alert('Blue screen of death!')
+        break;
+    }   
+}
+    // correctResponses variable++ to total answers to 7 questions
 
-
-
-
-
+if(correctResponses === 7) {
+    alert(initialAsk + ' , you got ' + correctResponses + ' out of 7 right.');
+}
+else if(correctResponses <= 6 && correctResponses > 0){
+    alert(initialAsk + ' good job, you got ' + correctResponses + ' out of 7.');
+}
+else if(correctResponses === 0) {
+    alert(initialAsk + ' none correct, bummer!');
+}
+else {
+    alert('Blue screen of death!');
+}
 
 
 
