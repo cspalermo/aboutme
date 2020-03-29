@@ -1,6 +1,6 @@
 body {
     background-color: rgb(248, 212, 224);
-    text-align: center;
+    text-align: left;
 }
 
 h1 {
@@ -24,11 +24,17 @@ main {
 }
 
 ol {
-    list-style: decimal;    
+    list-style-position: inside;
+    list-style: decimal;  
+    padding-left: 60px;
+      
 }
 
 ul {
+    list-style-position: inside;
     list-style-type: circle;
+    padding-left: 60px;
+
 }
 
-ul li::before {}
+/*ul li::before {}
