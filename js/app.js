@@ -67,7 +67,7 @@ var guesses = 4;
 var answerSix = 5;
 while (guesses > 0 && response !== answerSix) {
 
-    var response = parseInt(prompt('How many feet tall am I?'));
+    var response = parseInt(prompt('How many nieces and nephews do I have?'));
     //console.log(response);
     var tooLow = 'too low';
     var tooHigh = "too high";
@@ -96,6 +96,29 @@ while (guesses > 0 && response !== answerSix) {
 }
 
 // Question 7 Multiple correct answers stored in an array, 6 attempts
+
+var martialartsArr = [
+    'Kali',
+    'Panatukan',
+    'Brazilian jiu jitsu',
+    'Muay Thai',
+    'Combat Submission Wrestling',
+    'Boxing',
+    'Jeet Kun Do'];
+
+var styleGuess = prompt('Of the martial arts styles I train, which are my favorite?  You have 6 guesses.');
+
+for (var i = 0; i < 6; i++) {
+    if (martialartsArr.indexOf(styleGuess) > 4 && i < 5){
+        styleGuess = prompt('Those are great, not my favorite');
+}
+
+else if (martialartsArr.indexOf(styleGuess) === -1 && i < 5){
+    styleGuess = prompt('I don\t train that style.');
+}
+    alert('')
+}
+
 
 
 
