@@ -68,6 +68,8 @@ if ((askPets.toLowerCase() === 'yes') || (askPets === 'y')) {
 }}
 question5();
 
+function question6(initialAsk) {
+
 var askCoffee = prompt('Do I drink coffee?');
 
 if ((askCoffee.toLowerCase() === 'yes') || (askCoffee === 'y')) {
@@ -77,7 +79,8 @@ if ((askCoffee.toLowerCase() === 'yes') || (askCoffee === 'y')) {
 } else {
     alert('Good to meet you, ' + initialAsk);
     // console.log('Good to meet you' + initialAsk);
-}
+}}
+question6(userName);
 
 // Lab 03 - 6th question takes numeric input, prompt user to guess a number//
 var guesses = 4;
