@@ -2,9 +2,14 @@
 
 var correctResponses = 0;
 
+function question1() {
+
 var initialAsk = prompt('Hello, what is your name?');
 alert('Nice to meet you, ' + initialAsk);
 //console.log('Nice to meet you, ' + initialAsk);
+}
+question1();
+
 
 var askRead = prompt('Did you read my About Me website ' + initialAsk);
 //console.log('Did you read my About Me website ' + initialAsk);
