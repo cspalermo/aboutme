@@ -2,9 +2,16 @@
 
 var correctResponses = 0;
 
-var initialAsk = prompt('Hello, what is your name?');
-alert('Nice to meet you, ' + initialAsk);
+function question1() {
+
+var userNamePrompt = prompt('Hello, what is your name?');
+alert('Nice to meet you, ' + userNamePrompt);
 //console.log('Nice to meet you, ' + initialAsk);
+return userNamePrompt;
+}
+var userName = question1();
+
+function question2(initialAsk) {
 
 var askRead = prompt('Did you read my About Me website ' + initialAsk);
 //console.log('Did you read my About Me website ' + initialAsk);
@@ -16,7 +23,10 @@ if ((askRead.toLowerCase() === 'yes') || (askRead === 'y')) {
 } else {
     alert(initialAsk + ' lower and UPPER case letters matter.');
     // console.log(initialAsk + ' well, I worked hard on this!');
-}
+}}
+question2(userName);
+
+function question3() {
 
 var askFrom = prompt('Am I from the Seattle?');
 
@@ -27,7 +37,10 @@ if ((askFrom.toLowerCase() === 'yes') || (askFrom === 'y')) {
 } else {
     alert('I am from the East Coast');
     // console.log('home sweet home' + askFrom);
-}
+}}
+question3();
+
+function question4() {
 
 var askFamily = prompt('Do I have any siblings?');
 
@@ -38,7 +51,10 @@ if ((askFamily.toLowerCase() === 'yes') || (askFamily === 'y')) {
 } else {
     alert('Families come in all shapes and sizes!');
     //  console.log('Families come in all shapes and sizes' + askFamily);
-}
+}}
+question4();
+
+function question5() {
 
 var askPets = prompt('Do I have any pets?');
 
@@ -49,7 +65,10 @@ if ((askPets.toLowerCase() === 'yes') || (askPets === 'y')) {
 } else {
     alert('Gotta love them.');
     //  console.log('Gotta love them' + askPets);
-}
+}}
+question5();
+
+function question6(initialAsk) {
 
 var askCoffee = prompt('Do I drink coffee?');
 
@@ -60,9 +79,13 @@ if ((askCoffee.toLowerCase() === 'yes') || (askCoffee === 'y')) {
 } else {
     alert('Good to meet you, ' + initialAsk);
     // console.log('Good to meet you' + initialAsk);
-}
+}}
+question6(userName);
 
 // Lab 03 - 6th question takes numeric input, prompt user to guess a number//
+
+function question7() {
+
 var guesses = 4;
 var answerSix = 5;
 while (guesses > 0 && response !== answerSix) {
@@ -93,10 +116,13 @@ while (guesses > 0 && response !== answerSix) {
     if (guesses === 0) {
         alert('You are out of guesses, the correct answer is 5');
     }
-}
+}}
+question7();
 
 // Question 7 Multiple correct answers stored in an array, 6 attempts
 // huge thanks to Ryan Geddes for the help and explanations
+
+function question8() {
 
 var martialartsArr = [  //values in an array tracked with index.  indexOf to refer to specific one
     'Kali',
@@ -138,8 +164,11 @@ else if (martialartsArr.indexOf(styleGuess) === -1 && i < 5){
         alert('Blue screen of death!')
         break;
     }   
-}
+}}
+question8();
     // correctResponses variable++ to total answers to 7 questions
+
+function question9(initialAsk) {
 
 if(correctResponses === 7) {
     alert(initialAsk + ' , you got ' + correctResponses + ' out of 7 right.');
@@ -152,8 +181,8 @@ else if(correctResponses === 0) {
 }
 else {
     alert('Blue screen of death!');
-}
-
+}}
+question9(userName);
 
 
 
