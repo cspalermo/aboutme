@@ -54,6 +54,8 @@ if ((askFamily.toLowerCase() === 'yes') || (askFamily === 'y')) {
 }}
 question4();
 
+function question5() {
+
 var askPets = prompt('Do I have any pets?');
 
 if ((askPets.toLowerCase() === 'yes') || (askPets === 'y')) {
@@ -63,7 +65,8 @@ if ((askPets.toLowerCase() === 'yes') || (askPets === 'y')) {
 } else {
     alert('Gotta love them.');
     //  console.log('Gotta love them' + askPets);
-}
+}}
+question5();
 
 var askCoffee = prompt('Do I drink coffee?');
 
