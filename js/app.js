@@ -26,6 +26,8 @@ if ((askRead.toLowerCase() === 'yes') || (askRead === 'y')) {
 }}
 question2(userName);
 
+function question3() {
+
 var askFrom = prompt('Am I from the Seattle?');
 
 if ((askFrom.toLowerCase() === 'yes') || (askFrom === 'y')) {
@@ -35,7 +37,10 @@ if ((askFrom.toLowerCase() === 'yes') || (askFrom === 'y')) {
 } else {
     alert('I am from the East Coast');
     // console.log('home sweet home' + askFrom);
-}
+}}
+question3();
+
+
 
 var askFamily = prompt('Do I have any siblings?');
 
