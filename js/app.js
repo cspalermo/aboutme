@@ -122,6 +122,8 @@ question7();
 // Question 7 Multiple correct answers stored in an array, 6 attempts
 // huge thanks to Ryan Geddes for the help and explanations
 
+function question8() {
+
 var martialartsArr = [  //values in an array tracked with index.  indexOf to refer to specific one
     'Kali',
     'Panatukan',
@@ -162,7 +164,8 @@ else if (martialartsArr.indexOf(styleGuess) === -1 && i < 5){
         alert('Blue screen of death!')
         break;
     }   
-}
+}}
+question8();
     // correctResponses variable++ to total answers to 7 questions
 
 if(correctResponses === 7) {
