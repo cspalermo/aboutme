@@ -40,7 +40,7 @@ if ((askFrom.toLowerCase() === 'yes') || (askFrom === 'y')) {
 }}
 question3();
 
-
+function question4() {
 
 var askFamily = prompt('Do I have any siblings?');
 
@@ -51,7 +51,8 @@ if ((askFamily.toLowerCase() === 'yes') || (askFamily === 'y')) {
 } else {
     alert('Families come in all shapes and sizes!');
     //  console.log('Families come in all shapes and sizes' + askFamily);
-}
+}}
+question4();
 
 var askPets = prompt('Do I have any pets?');
 
