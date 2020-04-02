@@ -168,6 +168,8 @@ else if (martialartsArr.indexOf(styleGuess) === -1 && i < 5){
 question8();
     // correctResponses variable++ to total answers to 7 questions
 
+function question9(initialAsk) {
+
 if(correctResponses === 7) {
     alert(initialAsk + ' , you got ' + correctResponses + ' out of 7 right.');
 }
@@ -179,8 +181,8 @@ else if(correctResponses === 0) {
 }
 else {
     alert('Blue screen of death!');
-}
-
+}}
+question9(userName);
 
 
 
