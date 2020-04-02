@@ -4,12 +4,14 @@ var correctResponses = 0;
 
 function question1() {
 
-var initialAsk = prompt('Hello, what is your name?');
-alert('Nice to meet you, ' + initialAsk);
+var userNamePrompt = prompt('Hello, what is your name?');
+alert('Nice to meet you, ' + userNamePrompt);
 //console.log('Nice to meet you, ' + initialAsk);
+return userNamePrompt;
 }
-question1();
+var userName = question1();
 
+function question2(initialAsk) {
 
 var askRead = prompt('Did you read my About Me website ' + initialAsk);
 //console.log('Did you read my About Me website ' + initialAsk);
@@ -21,7 +23,8 @@ if ((askRead.toLowerCase() === 'yes') || (askRead === 'y')) {
 } else {
     alert(initialAsk + ' lower and UPPER case letters matter.');
     // console.log(initialAsk + ' well, I worked hard on this!');
-}
+}}
+question2(userName);
 
 var askFrom = prompt('Am I from the Seattle?');
 
