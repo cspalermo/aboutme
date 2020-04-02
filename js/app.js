@@ -83,6 +83,9 @@ if ((askCoffee.toLowerCase() === 'yes') || (askCoffee === 'y')) {
 question6(userName);
 
 // Lab 03 - 6th question takes numeric input, prompt user to guess a number//
+
+function question7() {
+
 var guesses = 4;
 var answerSix = 5;
 while (guesses > 0 && response !== answerSix) {
@@ -113,7 +116,8 @@ while (guesses > 0 && response !== answerSix) {
     if (guesses === 0) {
         alert('You are out of guesses, the correct answer is 5');
     }
-}
+}}
+question7();
 
 // Question 7 Multiple correct answers stored in an array, 6 attempts
 // huge thanks to Ryan Geddes for the help and explanations
